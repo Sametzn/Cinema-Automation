@@ -1,14 +1,14 @@
 ﻿namespace CinematiX
 {
-    partial class FrmAcilis
+    partial class FrmKullaniciOlustur
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,23 +23,22 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAcilis));
             panel1 = new Panel();
             button1 = new Button();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            txtKullaniciAdi = new TextBox();
+            btnKayitOl = new Button();
             txtSifre = new TextBox();
-            btnGirisyap = new Button();
-            pictureBox1 = new PictureBox();
+            txtAdSoyad = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            txtKullaniciAdi = new TextBox();
+            label4 = new Label();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -52,7 +51,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(475, 40);
-            panel1.TabIndex = 0;
+            panel1.TabIndex = 1;
             // 
             // button1
             // 
@@ -77,90 +76,95 @@
             label1.TabIndex = 1;
             label1.Text = "CinematiX";
             // 
-            // label2
+            // btnKayitOl
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(38, 88);
-            label2.Name = "label2";
-            label2.Size = new Size(214, 25);
-            label2.TabIndex = 1;
-            label2.Text = "YETKİLİ KULLANICI ADI";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(38, 119);
-            label3.Name = "label3";
-            label3.Size = new Size(129, 25);
-            label3.TabIndex = 2;
-            label3.Text = "YETKİLİ ŞİFRE";
-            // 
-            // txtKullaniciAdi
-            // 
-            txtKullaniciAdi.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            txtKullaniciAdi.Location = new Point(258, 88);
-            txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(184, 25);
-            txtKullaniciAdi.TabIndex = 3;
+            btnKayitOl.BackColor = Color.Crimson;
+            btnKayitOl.Cursor = Cursors.Hand;
+            btnKayitOl.FlatAppearance.BorderSize = 0;
+            btnKayitOl.FlatStyle = FlatStyle.Flat;
+            btnKayitOl.Location = new Point(255, 162);
+            btnKayitOl.Name = "btnKayitOl";
+            btnKayitOl.Size = new Size(184, 50);
+            btnKayitOl.TabIndex = 11;
+            btnKayitOl.Text = "KAYIT EKLE";
+            btnKayitOl.UseVisualStyleBackColor = false;
+            btnKayitOl.Click += btnKayitOl_Click_1;
             // 
             // txtSifre
             // 
             txtSifre.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            txtSifre.Location = new Point(258, 119);
+            txtSifre.Location = new Point(255, 124);
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(184, 25);
-            txtSifre.TabIndex = 4;
+            txtSifre.TabIndex = 10;
             txtSifre.UseSystemPasswordChar = true;
             // 
-            // btnGirisyap
+            // txtAdSoyad
             // 
-            btnGirisyap.BackColor = Color.FromArgb(128, 255, 255);
-            btnGirisyap.Cursor = Cursors.Hand;
-            btnGirisyap.FlatAppearance.BorderSize = 0;
-            btnGirisyap.FlatStyle = FlatStyle.Flat;
-            btnGirisyap.Location = new Point(258, 150);
-            btnGirisyap.Name = "btnGirisyap";
-            btnGirisyap.Size = new Size(184, 50);
-            btnGirisyap.TabIndex = 5;
-            btnGirisyap.Text = "GİRİŞ YAP";
-            btnGirisyap.UseVisualStyleBackColor = false;
-            btnGirisyap.Click += btnGirisyap_Click;
+            txtAdSoyad.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            txtAdSoyad.Location = new Point(255, 61);
+            txtAdSoyad.Name = "txtAdSoyad";
+            txtAdSoyad.Size = new Size(184, 25);
+            txtAdSoyad.TabIndex = 8;
             // 
-            // pictureBox1
+            // label3
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(435, 46);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(30, 30);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            label3.AutoSize = true;
+            label3.Location = new Point(35, 124);
+            label3.Name = "label3";
+            label3.Size = new Size(129, 25);
+            label3.TabIndex = 7;
+            label3.Text = "YETKİLİ ŞİFRE";
             // 
-            // FrmAcilis
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(35, 61);
+            label2.Name = "label2";
+            label2.Size = new Size(174, 25);
+            label2.TabIndex = 6;
+            label2.Text = "YETKİLİ AD SOYAD";
+            // 
+            // txtKullaniciAdi
+            // 
+            txtKullaniciAdi.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            txtKullaniciAdi.Location = new Point(255, 92);
+            txtKullaniciAdi.Name = "txtKullaniciAdi";
+            txtKullaniciAdi.Size = new Size(184, 25);
+            txtKullaniciAdi.TabIndex = 9;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(35, 92);
+            label4.Name = "label4";
+            label4.Size = new Size(214, 25);
+            label4.TabIndex = 11;
+            label4.Text = "YETKİLİ KULLANICI ADI";
+            // 
+            // FrmKullaniciOlustur
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.PeachPuff;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(475, 235);
-            Controls.Add(pictureBox1);
-            Controls.Add(btnGirisyap);
-            Controls.Add(txtSifre);
             Controls.Add(txtKullaniciAdi);
+            Controls.Add(label4);
+            Controls.Add(btnKayitOl);
+            Controls.Add(txtSifre);
+            Controls.Add(txtAdSoyad);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(panel1);
             Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(5);
-            Name = "FrmAcilis";
+            Name = "FrmKullaniciOlustur";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
-            KeyDown += FrmAcilis_KeyDown;
+            Text = "FrmKullaniciOlustur";
+            KeyDown += FrmKullaniciOlustur_KeyDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -170,11 +174,12 @@
         private Panel panel1;
         private Button button1;
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private TextBox txtKullaniciAdi;
+        private Button btnKayitOl;
         private TextBox txtSifre;
-        private Button btnGirisyap;
-        private PictureBox pictureBox1;
+        private TextBox txtAdSoyad;
+        private Label label3;
+        private Label label2;
+        private TextBox txtKullaniciAdi;
+        private Label label4;
     }
 }
